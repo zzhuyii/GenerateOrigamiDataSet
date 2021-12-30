@@ -1,0 +1,1 @@
+pattern, m, n, tcrease, tpanel, W, bendstiff30, bendstiff60, bendstiff90, axialstiff30, axialstiff60, axialstiff90

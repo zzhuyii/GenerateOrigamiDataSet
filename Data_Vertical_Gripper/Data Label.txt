@@ -1,0 +1,1 @@
+Pattern, L1, L2, t1, t2, tpanel, rate, W, freqFinal, finalQ, Tmax, stiff,
