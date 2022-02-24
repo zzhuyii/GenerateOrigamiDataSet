@@ -70,39 +70,26 @@ L=0.2; % assume the material is from a sheet with 0.2m*0.2m size
 %% Properties that are features
 
 % design 1
-m=30;
-n=6;
-tcrease=0.7*10^-3; % crease of origami
-tpanel=4*10^-3; % thickness of panel
-W=2.5*10^-3; % width of crease
-
-% design 2
-% m=24;
-% n=6;
+% m=30;
+% n=9;
 % tcrease=0.7*10^-3; % crease of origami
-% tpanel=2.5*10^-3; % thickness of panel
-% W=2.5*10^-3; % width of crease
+% tpanel=4*10^-3; % thickness of panel
+% W=3.5*10^-3; % width of crease
 
 % design 3
-% m=24;
+% m=30;
 % n=6;
 % tcrease=0.7*10^-3; % crease of origami
-% tpanel=4.5*10^-3; % thickness of panel
+% tpanel=3.0*10^-3; % thickness of panel
 % W=2*10^-3; % width of crease
 
 % design 4 
-% m=24;
-% n=9;
-% tcrease=0.7*10^-3; % crease of origami
-% tpanel=3*10^-3; % thickness of panel
-% W=3*10^-3; % width of crease
+m=36;
+n=9;
+tcrease=0.7*10^-3; % crease of origami
+tpanel=5*10^-3; % thickness of panel
+W=3*10^-3; % width of crease
 
-% design (combined) 
-% m=30;
-% n=6;
-% tcrease=0.8*10^-3; % crease of origami
-% tpanel=3*10^-3; % thickness of panel
-% W=1.05*10^-3; % width of crease
 
 
 bendstiff=[0 0 0];

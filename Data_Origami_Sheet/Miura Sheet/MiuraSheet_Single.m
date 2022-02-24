@@ -72,9 +72,9 @@ L=0.2; % assume the material is from a sheet with 0.2m*0.2m size
 %% Properties that are features
 
 % sample 1
-tcrease=0.8*10^-3; % crease of origami
-tpanel=1.0*10^-3; % thickness of panel
-W=3*10^-3; % width of crease
+tcrease=0.9*10^-3; % crease of origami
+tpanel=4.5*10^-3; % thickness of panel
+W=2.5*10^-3; % width of crease
 m=30;
 n=9;
 
