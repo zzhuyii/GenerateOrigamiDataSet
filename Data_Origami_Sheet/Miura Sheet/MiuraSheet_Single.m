@@ -75,8 +75,8 @@ L=0.2; % assume the material is from a sheet with 0.2m*0.2m size
 tcrease=0.9*10^-3; % crease of origami
 tpanel=4.5*10^-3; % thickness of panel
 W=2.5*10^-3; % width of crease
-m=30;
-n=9;
+m=6;
+n=6;
 
 
 gama=70*pi/180;
@@ -106,7 +106,7 @@ for k=1:3
     
     if plotFlag==1
         ori.Plot_UnmeshedOrigami(); % Plot the unmeshed origami for inspection;
-        close;
+%         close;
     end
     %% Meshing of the origami model
     % find the crease lines that are not on the edge
