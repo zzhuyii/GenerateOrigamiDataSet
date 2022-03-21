@@ -6,7 +6,7 @@ This repostory conatins three datasets regarding the performanc of origami canop
 ## Origami canopy
 
 <p align="center">
-<img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/master/Figures_ReadMe/CanopyDetails.png" width="50%" >
+<img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/main/Figures_ReadMe/CanopyDetails.png" width="80%" >
 </p>
 
 
@@ -20,7 +20,7 @@ The extension ratio is measured using the folded length of the pattern to the or
 ## Active origami gripper 
 
 <p align="center">
-<img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/master/Figures_ReadMe/GripperDetails.png" width="50%" >
+<img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/main/Figures_ReadMe/GripperDetails.png" width="80%" >
 </p>
 
 
@@ -36,7 +36,7 @@ Design features of the gripper include the length (L1) and width (L2) of the gri
 ## Origami Arch for shape fitting
 
 <p align="center">
-<img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/master/Figures_ReadMe/ShapeFitDetails.png" width="50%" >
+<img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/main/Figures_ReadMe/ShapeFitDetails.png" width="80%" >
 </p>
 
 
