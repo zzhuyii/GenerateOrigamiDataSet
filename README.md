@@ -9,6 +9,7 @@ This repostory conatins three datasets regarding the performanc of origami canop
 <img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/master/Figures_ReadMe/CanopyDetails.png" width="50%" >
 </p>
 
+
 In this database, we study the stiffness performance of an origami canopy. 
 The canopy can be made using two patterns and they are a Miura origami pattern (p=1) or a TMP pattern (p=2). 
 Two additional categorical variables are used to determine the number of unit cells in the pattern and they are m={24,30,36} and n={6,9,12}. 
@@ -21,6 +22,7 @@ The extension ratio is measured using the folded length of the pattern to the or
 <p align="center">
 <img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/master/Figures_ReadMe/GripperDetails.png" width="50%" >
 </p>
+
 
 In this database, we study the performance of an active origami gripper. 
 Three different patterns are studied and the performance of the gripper include: 
@@ -36,6 +38,7 @@ Design features of the gripper include the length (L1) and width (L2) of the gri
 <p align="center">
 <img align="center" src="https://github.com/zzhuyii/GenerateOrigamiDataSet/blob/master/Figures_ReadMe/ShapeFitDetails.png" width="50%" >
 </p>
+
 
 In this database we study the interaction between origami shape fitting and mechanical behaviors of produced origami structure. 
 A Miura origami strip is built to fit the a half circle curve with a radius of 2m. 
