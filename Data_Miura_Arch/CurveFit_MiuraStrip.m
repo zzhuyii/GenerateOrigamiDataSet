@@ -21,7 +21,7 @@ function [node, panel, error] = CurveFit_MiuraStrip(m,offset,w,extrude)
         xcord(2*i)=xcord(2*i)+vec(1)*offset;
         zcord(2*i)=zcord(2*i)+vec(2)*offset;   
     end
-% 
+
 %     plot(xcord,zcord)
 %     set(gca,'DataAspectRatio',[1 1 1])
 %     hold on

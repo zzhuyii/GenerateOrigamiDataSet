@@ -1,51 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%  Active Origami Simulator  %%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% Authors: Yi Zhu, and Evegueni T. Filipov
-%
-% Discription: This code package implement a bar and hinge model based 
-% simulator for active origami structures. The code package can capture 
-% the following behaviors of active origami systems;
-%
-% (1) Simulate panel contact in origami;
-% (2) Simulate electro-thermal actuation for folding origami;
-% (3) Provide 3 different solver for large deformation loading;
-% (4) Provide elastic support;
-% (5) Provide compliant crease bar and hinge model for origami;
-%
-% Acknowledgement: We would like to acknowledge the prior works from
-% Ke Liu and Glaucio H. Paulino for establishing shared versions of
-% nonrigid origami simulators. Their works paved the way for the new
-% origami simulator, the origami contact, compliant crease, electro-thermal
-% model presented in this package. 
-%
-% Reference:
-% [1] Y. Zhu, E. T. Filipov (2020). 'Rapid Multi-Physic Simulation for 
-%     Electro-Thermal Origami Robotic Systems' (submitted)
-% [2] Y. Zhu, E. T. Filipov (2020). 'A Bar and Hinge Model for Simulating 
-%     Bistability in Origami Structures with Compliant Creases' Journal of 
-%     Mechanisms and Robotics, 021110-1. 
-% [3] Y. Zhu, E. T. Filipov (2019). 'An Efficient Numerical Approach for 
-%     Simulating Contact in Origami Assemblages.' Proc. R. Soc. A, 475: 
-%     20190366.       
-% [4] Y. Zhu, E. T. Filipov (2019). 'Simulating compliant crease origami 
-%     with a bar and hinge model.' IDETC/CIE 2019. 97119. 
-% [5] K. Liu, G. H. Paulino (2018). 'Highly efficient nonlinear        
-%     structural analysis of origami assemblages using the MERLIN2      
-%     software.' Origami^7. 
-% [6] K. Liu, G. H. Paulino (2017). 'Nonlinear mechanics of non-rigid   
-%     origami - An efficient computational approach.' Proc. R. Soc. A 473: 
-%     20170348. 
-% [7] K. Liu, G. H. Paulino (2016). 'MERLIN: A MATLAB implementation to   
-%     capture highly nonlinear behavior of non-rigid origami.'           
-%     Proceedings of IASS Annual Symposium 2016. 
-%
-%%%%%%%%%%%%%%%%%%%%%%  Active Origami Simulator  %%%%%%%%%%%%%%%%%%%%%%%%%
-close all; clear all;
-rng('shuffle')
-
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Generate Two Panel Origami Gripper (Single Sample)
+%  Yi Zhu & Evgueni T. Filipov
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% Initialize the solver
+close all; clear all;
+rng('shuffle')
 ori=OrigamiSolver;
 
 %% Properties that are constants

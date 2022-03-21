@@ -1,6 +1,4 @@
-% Yes the Yoshimura pattern generation code works fine
-% Though it may not be suitable for making the metamaterial sheet
-% We need something else.
+%% Check the rigid foldability of TMP canopy
 
 ori=OrigamiSolver;    
 

@@ -1,7 +1,4 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%  Generate Miura Arch Shape-Fitting (Single Sample)
-%  Yi Zhu & Evgueni T. Filipov
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% check the rigid-foldability of the generated the Miura strip
 
 %% Initialize the solver
 
@@ -17,33 +14,14 @@ plotFlag=1; % determine if we need plotting
 
     
 %% Properties that are features
-% Target 1
-m=24;
-tcrease=0.7*10^-3; % crease of origami
-tpanel=1.5*10^-3; % thickness of panel
-W=3*10^-3; % width of crease
-offset=0.25;
-stripeWidth=0.02;
-extrude=0.15;
+tcrease=0.02*10^-3; % crease of origami
+tpanel=4*10^-3; % thickness of panel
+W=1*10^-3; % width of crease
 
-% Target 2
-% m=8;
-% tcrease=0.7*10^-3; % crease of origami
-% tpanel=5*10^-3; % thickness of panel
-% W=3*10^-3; % width of crease
-% offset=0.18;
-% stripeWidth=0.035;
-% extrude=0.1;
-
-% Target 3
-% m=12;
-% tcrease=0.8*10^-3; % crease of origami 
-% tpanel=4*10^-3; % thickness of panel
-% W=2.5*10^-3; % width of crease
-% offset=0.11;
-% stripeWidth=0.03;
-% extrude=0.15;
-
+m=8;
+offset=0.3;
+stripeWidth=0.2;
+extrude=0.2;
 
 
 [ori.node0,ori.panel0,error]=CurveFit_MiuraStrip(m,offset,stripeWidth,extrude);
@@ -97,50 +75,23 @@ ori.width=500;
 ori.height=500;    
 ori.deformEdgeShow=1;
 
-%% Apply a NR loading to determine the z direction stiffness
-nrZ=ControllerNRLoading;
 
-nrZ.videoOpen=0;
-nrZ.plotOpen=plotFlag;
-
-nrZ.increStep=5;
-nrZ.tol=1*10^-7; 
-
-nrZ.supp=[1 1 1 1;
-          2*m+1 1 1 1;
-          2*m+1+1 1 1 1;
-          4*m+2 1 1 1;
-          4*m+2+1 1 1 1;
-          6*m+3 1 1 1;];
-nrZ.load=[m+1, 0, 0, -1];
-
-ori.loadingController{1}={"NR",nrZ};
-ori.Solver_Solve();    
-
-disp= abs(nrZ.Uhis(nrZ.increStep,m+1,3));    
-Zstiff=nrZ.increStep*1/disp;  
-
-Zsnap=0;
-if disp>1
-    Zsnap=1;
-end
-
-%% Apply a NR loading to determine the X direction stiffness
+%% Check developability
 nrX=ControllerNRLoading;
 
 nrX.videoOpen=0;
 nrX.plotOpen=plotFlag;
+nrX.detailFigOpen=1;
 
 nrX.increStep=5;
 nrX.tol=1*10^-7; 
 
 nrX.supp=[1 1 1 1;
-          2*m+1 1 1 1;
-          2*m+1+1 1 1 1;
-          4*m+2 1 1 1;
-          4*m+2+1 1 1 1;
-          6*m+3 1 1 1;];
-nrX.load=[m+1, 1, 0, 0];
+          2*m+1 0 1 1;
+          m+1 0 1 0];
+          
+nrX.load=[2*m+1+1, 0, 0.01, 0;
+          4*m+2+1, 0, -0.01, 0;];
 
 ori.loadingController{1}={"NR",nrX};
 ori.Solver_Solve();    
