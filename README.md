@@ -46,3 +46,5 @@ Shape fitting parameters including number of segments m, the offset length lo, t
 Other design features such as the thicknesses of panels (tp) and creases (tc) and the width of creases (W) are also varied when building the database because they affects the stiffness of the arch.
 The performance indices include the stiffness in X-direction (kx) and Z-direction (kz), the error of shape fitting (e), and whether the structure will snap under a 5 N load applied vertically (Sz).
 
+## Reference
+Yi Zhu, Evgueni T. Filipov, 2022, Harnessing Interpretable Machine learning for Origami Feature Design and Pattern Selection (submitted)
