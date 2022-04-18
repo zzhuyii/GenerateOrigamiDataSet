@@ -47,4 +47,4 @@ Other design features such as the thicknesses of panels (tp) and creases (tc) an
 The performance indices include the stiffness in X-direction (kx) and Z-direction (kz), the error of shape fitting (e), and whether the structure will snap under a 5 N load applied vertically (Sz).
 
 ## Reference
-Yi Zhu, Evgueni T. Filipov, 2022, Harnessing Interpretable Machine learning for Origami Feature Design and Pattern Selection (submitted)
+Yi Zhu, Evgueni T. Filipov, 2022, Harnessing Interpretable Machine learning for Origami Feature Design and Pattern Selection (submitted) (https://arxiv.org/abs/2204.07235)
