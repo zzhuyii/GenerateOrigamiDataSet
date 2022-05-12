@@ -141,7 +141,7 @@ UhisAssemble=zeros(maxLoadingStep,newNodeNum,3);
 finalQ=0;
 Tmax=0;
 
-thermal=ControllerThermalLoading;
+thermal=ControllerElectroThermalFolding;
 thermal.thermalStep=100;
 thermal.tol=5*10^-7; 
 

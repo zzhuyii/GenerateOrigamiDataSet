@@ -233,7 +233,7 @@ ori.Solver_Solve();
 
 MaximumLoadingStep=400;
 
-thermal=ControllerThermalLoading;
+thermal=ControllerElectroThermalFolding;
 
 thermal.thermalStep=1;
 thermal.tol=5*10^-6; 

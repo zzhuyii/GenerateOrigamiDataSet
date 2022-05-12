@@ -216,7 +216,7 @@ ori.continuingLoading=1;
 %% Thermal Loading step
 MaximumLoadingStep=400;
 
-thermal=ControllerThermalLoading;
+thermal=ControllerElectroThermalFolding;
 
 thermal.thermalStep=120;
 thermal.tol=5*10^-6; 
