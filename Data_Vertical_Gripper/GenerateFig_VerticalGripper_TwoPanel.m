@@ -198,7 +198,7 @@ thermal.targetCreaseHeating=[2,qload*L2;
 
 for i=1:maxLoadingStep
 
-    ori.loadingController{1}={"ThermalLoading",thermal};
+    ori.loadingController{1}={"ElectroThermal",thermal};
     ori.Solver_Solve();
     % we perform the countinuing loading step by step and check the
     % rotation angle, the loading stops after reaching 90 degree;

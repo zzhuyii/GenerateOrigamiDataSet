@@ -314,7 +314,7 @@ for i=1:MaximumLoadingStep
     end
     
     % applying the thermal loading
-    ori.loadingController{1}={"ThermalLoading",thermal};
+    ori.loadingController{1}={"ElectroThermal",thermal};
     ori.Solver_Solve();
     
     UhisAssemble(i,:,:)=thermal.Uhis(1,:,:);
