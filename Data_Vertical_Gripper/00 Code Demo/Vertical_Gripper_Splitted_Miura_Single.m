@@ -187,7 +187,7 @@ ori.densityPanel=rho;
 nr2=ControllerNRLoading;
 
 nr2.videoOpen=0;
-nr2.plotOpen=0;
+nr2.plotOpen=1;
 
 nr2.increStep=10;
 nr2.tol=5*10^-6; 
@@ -214,10 +214,7 @@ ori.Solver_Solve();
 ori.continuingLoading=1;
 
 %% Thermal Loading step
-MaximumLoadingStep=400;
-
 thermal=ControllerElectroThermalFolding;
-
 thermal.thermalStep=120;
 thermal.tol=5*10^-6; 
 
@@ -248,8 +245,8 @@ thermal.deltaAlpha(17)= deltaAlpha;
 thermal.deltaAlpha(26)= deltaAlpha;
 thermal.deltaAlpha(30)= deltaAlpha;
 
-thermal.deltaAlpha(11)= deltaAlpha;
-thermal.deltaAlpha(14)= deltaAlpha;
+thermal.deltaAlpha(11)= -deltaAlpha;
+thermal.deltaAlpha(14)= -deltaAlpha;
 thermal.deltaAlpha(27)= -deltaAlpha;
 thermal.deltaAlpha(29)= -deltaAlpha;
 
@@ -258,14 +255,12 @@ thermal.deltaAlpha(21)= deltaAlpha;
 thermal.deltaAlpha(34)= deltaAlpha;
 thermal.deltaAlpha(36)= deltaAlpha;
 
-
-
 thermal.Emat1=2*10^9; 
 thermal.Emat2=2*10^9;
 thermal.tmat1=t1;
 thermal.tmat2=t2;
 thermal.videoOpen=1;
-thermal.plotOpen=0;
+thermal.plotOpen=1;
 
 % the target loading of crease heating
 thermal.targetCreaseHeating=[
@@ -296,15 +291,8 @@ thermal.targetCreaseHeating=[
     34,rate*L1*qload;
     36,rate*L1*qload];
 
-newNodeNum=size(ori.newNode);
-newNodeNum=newNodeNum(1);
-
-tempHisAssemble=zeros(newNodeNum,MaximumLoadingStep);
-UhisAssemble=zeros(MaximumLoadingStep,newNodeNum,3);
-
 
 % applying the thermal loading
-ori.loadingController{1}={"ThermalLoading",thermal};
+ori.loadingController{1}={"ElectroThermal",thermal};
 ori.Solver_Solve();    
-
 

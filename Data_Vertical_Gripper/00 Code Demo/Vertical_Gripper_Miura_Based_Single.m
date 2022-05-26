@@ -204,21 +204,21 @@ thermal.roomTempNode=[];
 
 thermal.deltaAlpha=zeros(ori.oldCreaseNum,1);
 
-thermal.deltaAlpha(1)= deltaAlpha;
+thermal.deltaAlpha(1)= -deltaAlpha;
 thermal.deltaAlpha(2)= deltaAlpha;
 thermal.deltaAlpha(3)= deltaAlpha;
-thermal.deltaAlpha(4)= -deltaAlpha;
+thermal.deltaAlpha(4)= deltaAlpha;
 thermal.deltaAlpha(5)= deltaAlpha;
 
-thermal.deltaAlpha(6)= -deltaAlpha;
+thermal.deltaAlpha(6)= deltaAlpha;
 thermal.deltaAlpha(8)= deltaAlpha;
 thermal.deltaAlpha(9)= deltaAlpha;
 thermal.deltaAlpha(12)= -deltaAlpha;
 
 thermal.deltaAlpha(14)= deltaAlpha;
 thermal.deltaAlpha(15)= deltaAlpha;
-thermal.deltaAlpha(17)= -deltaAlpha;
-thermal.deltaAlpha(19)= deltaAlpha;
+thermal.deltaAlpha(17)= deltaAlpha;
+thermal.deltaAlpha(19)= -deltaAlpha;
 
 
 thermal.Emat1=2*10^9; 
@@ -226,7 +226,7 @@ thermal.Emat2=2*10^9;
 thermal.tmat1=t1;
 thermal.tmat2=t2;
 thermal.videoOpen=1;
-thermal.plotOpen=0;
+thermal.plotOpen=1;
 
 % the target loading of crease heating
 thermal.targetCreaseHeating=[
@@ -255,7 +255,7 @@ UhisAssemble=zeros(MaximumLoadingStep,newNodeNum,3);
 
 
 % applying the thermal loading
-ori.loadingController{1}={"ThermalLoading",thermal};
+ori.loadingController{1}={"ElectroThermal",thermal};
 ori.Solver_Solve();
     
 

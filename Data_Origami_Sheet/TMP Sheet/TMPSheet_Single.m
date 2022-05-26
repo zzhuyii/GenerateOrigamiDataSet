@@ -82,7 +82,7 @@ for k=1:3
 
     % Compute the meshed geometry
     ori.compliantCreaseOpen=0;
-    ori.flag2D3D=3;
+    ori.mesh2D3D=3;
     ori.Mesh_Mesh()
 
     if plotFlag==1

@@ -47,7 +47,7 @@ ori.creaseWidthVec(creaseIndex)=W;
 
 % Compute the meshed geometry
 ori.compliantCreaseOpen=0;
-ori.flag2D3D=3;
+ori.mesh2D3D=3;
 ori.Mesh_Mesh()
 ori.Plot_MeshedOrigami();
 

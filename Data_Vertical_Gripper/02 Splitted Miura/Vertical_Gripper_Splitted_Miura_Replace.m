@@ -283,8 +283,8 @@ thermal.deltaAlpha(17)= deltaAlpha;
 thermal.deltaAlpha(26)= deltaAlpha;
 thermal.deltaAlpha(30)= deltaAlpha;
 
-thermal.deltaAlpha(11)= deltaAlpha;
-thermal.deltaAlpha(14)= deltaAlpha;
+thermal.deltaAlpha(11)= -deltaAlpha;
+thermal.deltaAlpha(14)= -deltaAlpha;
 thermal.deltaAlpha(27)= -deltaAlpha;
 thermal.deltaAlpha(29)= -deltaAlpha;
 
